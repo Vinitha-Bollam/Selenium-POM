@@ -13,7 +13,7 @@ public class BrowserLaunch {
     //Launching the browser and navigating to 'webstaurantstore'
     public void navigateToPage() {
         System.out.println("Navigating to webstaurantstore page");
-        driver.get("https://www.webstaurantstore.com");
+        driver.get("https://www.webstaurantstore.com/");
         driver.manage().window().maximize();
     }
 }
