@@ -1,6 +1,6 @@
-# Selenium-POM-Webstaurantstore
-Selenium Page Object Model for Webstaurantstore
-Test case:
+# Selenium- Page Object Model
+
+Test scenario:
 1. Go to "https://www.webstaurantstore.com/"
 2. Search for "stainless work table".
 3. Check the search result ensuring every product has the word "Table" in its title.
