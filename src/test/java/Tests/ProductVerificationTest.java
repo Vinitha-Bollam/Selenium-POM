@@ -4,6 +4,7 @@ import Pages.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class ProductVerificationTest {
 
@@ -12,8 +13,10 @@ public class ProductVerificationTest {
     public static void main(String[] args) {
 
         // Using WebDriverManager to automate driver management
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*", "ignore-certificate-errors");
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
 
         //Launch Browser
         BrowserLaunch bl = new BrowserLaunch(driver);
